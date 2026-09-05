@@ -1,0 +1,5 @@
+onnxruntime==1.23.2
+tokenizers==0.21.4
+huggingface-hub==0.36.2
+transformers==4.51.3
+IndicTransToolkit==1.1.1
