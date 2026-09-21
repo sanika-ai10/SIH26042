@@ -16,3 +16,7 @@
 local.properties
 .env
 debug.keystore
+model-hi/
+__pycache__/
+*.zip
+.vscode/
