@@ -15,24 +15,13 @@ In multilingual classrooms, language barriers between Hindi-speaking educators a
 The platform integrates an edge-optimized Speech-to-Text (ASR) engine, a fast-path curriculum phrase cache, machine translation, and speech synthesis into a low-latency pipeline designed for low-resource environments.
 
 ### Core Pipeline
-Teacher Speaks (Hindi Audio)
-│
-▼
-Offline Hindi ASR (Vosk / Kaldi)
-│
-▼
-Recognized Hindi Text
-│
-▼
-Fast-Path FLN Cache ──[Cache Miss]──► IndicTrans2 Engine
-│                                   │
-└─────────────────┬─────────────────┘
-▼
-Santhali Text (Ol Chiki)
-│
-▼
-Santhali Audio Playback / TTS
 
+1. **Audio Input:** Teacher speaks in Hindi via microphone (16 kHz raw PCM).
+2. **Offline ASR (`Vosk`):** Real-time, CPU-only acoustic decoding $\rightarrow$ Hindi text.
+3. **Translation Decision:**
+   * **Fast Path (Cache Hit):** Instant match from SQLite for standard NIPUN classroom commands (<10 ms).
+   * **Fallback Path (Cache Miss):** Dispatched to `IndicTrans2` for general Hindi-to-Santhali translation.
+4. **Script & Synthesis:** Santhali rendered in authentic **Ol Chiki** script alongside optional voice playback (TTS).
 
 ---
 
