@@ -1,4 +1,5 @@
-# AI-Powered Vernacular Pedagogy and Real-Time Translation Tool
+# this is just a comment.
+# AI-Powered Vernacular Pedagogy and Real-Time Translation Tool. 
 
 
 An AI-powered, offline-first educational solution designed to support mother-tongue-based primary education by enabling real-time Hindi-to-Santhali voice translation and bilingual learning support.
