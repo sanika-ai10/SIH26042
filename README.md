@@ -1,4 +1,4 @@
-# this is just a comment.
+
 # AI-Powered Vernacular Pedagogy and Real-Time Translation Tool. 
 
 
